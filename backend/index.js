@@ -21,6 +21,7 @@ app.get('/health', (req, res) => {
 // Routes
 app.use('/api/products', productRoutes);
 
+//Norwil cloner
 // Sync database and start server
 sequelize.sync().then(() => {
   console.log('Database synced');
